@@ -20,8 +20,8 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 module.exports = {
   solidity: "0.8.4",
   networks: {
-    ropsten: {
-      url: `https://eth-ropsten.alchemyapi.io/v2/${process.env.ropsten_key}`,
+    rinkeby: {
+      url: "https://rinkeby.infura.io/v3/${process.env.rinkeby_key}",
       accounts: [`${process.env.private_key}`]
     },
     mainnet: {

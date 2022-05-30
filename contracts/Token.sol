@@ -21,8 +21,8 @@ contract Token is Context, IERC20, Ownable {
     bool locked = true;
 
     constructor () {
-        _name = "FreshAirCoin";
-        _symbol = "FAC";
+        _name = "StableCoin";
+        _symbol = "USDT";
         _decimals = 18;
         uint256 amount = 1000000000000000000000000000; // 1B
         _totalSupply = amount;
